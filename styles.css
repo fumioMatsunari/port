@@ -1,0 +1,77 @@
+/* 全体のスタイル設定 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 4vw;
+    color: gray;
+}
+
+header .highlight {
+    color: white;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 2vw;
+    color: white;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content {
+    min-height: calc(100vh - 100px);
+    padding: 2rem;
+}
+
+.introduction, .skills, .projects {
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+/* レスポンシブデザインのためのスタイル */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 6vw;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .skills, .projects {
+        margin: 1rem 0;
+    }
+}
